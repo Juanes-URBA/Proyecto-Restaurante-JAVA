@@ -1,4 +1,4 @@
-import java.security.PublicKey;
+
 import java.util.Scanner;
 
 public class Mensajeria {
@@ -97,7 +97,7 @@ public class Mensajeria {
     }
     //Esta es la opcion 6 del menú principal de Administrador
     public void opcion6Admin(){
-        System.out.println("rjrfi");
+        System.out.println("---- Reporte final del día --- ");
     }
     //Esta función resive datos enteros
     public int pedirDatosEnteros(){
