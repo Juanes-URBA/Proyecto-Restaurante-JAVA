@@ -25,7 +25,7 @@ public class Main {
         }
 
         if (log instanceof Cocinero) {
-            msg.opcinesCocinero();
+            msg.opcionesCocinero();
         }
 
         if (log instanceof Administrador) {
