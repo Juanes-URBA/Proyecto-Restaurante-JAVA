@@ -1,11 +1,23 @@
 public class Producto {
-    int id;
-    String nombre;
-    int precio;
 
-    public Producto(int id, String nombre, int precio) {
-        this.id = id;
+    private String nombre;
+    private int precio;
+
+    public Producto(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
 }
+
