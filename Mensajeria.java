@@ -4,8 +4,6 @@ public class Mensajeria {
 
     Scanner sc = new Scanner(System.in);
 
-    // ===== MENÚS =====
-
     public void opcionesMesero() {
         System.out.println("----------Mesero----------");
         System.out.println("1. Consultar menú del día");
@@ -29,7 +27,6 @@ public class Mensajeria {
         System.out.println("0. Cerrar sesión");
     }
 
-    // ===== MENÚ DEL DÍA =====
 
     public void mostrarMenuProductos() {
         System.out.println("------Menú del día-----");
@@ -39,7 +36,6 @@ public class Mensajeria {
         System.out.println("Papas fritas - $6000");
     }
 
-    // ===== PEDIR DATOS =====
 
     public int pedirEntero(String mensaje) {
         System.out.print(mensaje);
@@ -51,8 +47,6 @@ public class Mensajeria {
         System.out.print(mensaje);
         return sc.nextLine();
     }
-
-    // ===== OTROS =====
 
     public void cerrarSesion(String nombre) {
         System.out.println("Hasta pronto, " + nombre);
