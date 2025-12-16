@@ -27,7 +27,6 @@ public class Mensajeria {
         System.out.println("0. Cerrar sesión");
     }
 
-
     public void mostrarMenuProductos() {
         System.out.println("------Menú del día-----");
         System.out.println("Hamburguesa - $12000");
@@ -36,15 +35,15 @@ public class Mensajeria {
         System.out.println("Papas fritas - $6000");
     }
 
-
-    public int pedirEntero(String mensaje) {
-        System.out.print(mensaje);
-        return sc.nextInt();
+    public int pedirEntero(String msg) {
+        System.out.print(msg);
+        int n = sc.nextInt();
+        sc.nextLine(); 
+        return n;
     }
 
-    public String pedirTexto(String mensaje) {
-        sc.nextLine();
-        System.out.print(mensaje);
+    public String pedirTexto(String msg) {
+        System.out.print(msg);
         return sc.nextLine();
     }
 
