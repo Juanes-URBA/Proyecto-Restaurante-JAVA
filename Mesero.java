@@ -1,15 +1,11 @@
-public class Mesero {
+public class Mesero extends Usuario {
 
-    Usuario dato;
-
-    public Mesero(String nombre, String password){
-        dato = new Usuario(nombre, password);
+    public Mesero(String nombre, String usuario, String clave) {
+        super(nombre, usuario, clave);
     }
-    
-    Mensajeria mj = new Mensajeria();
 
-    public void menu(){
-        mj.opcionesMesero();
+    @Override
+    public String getRol() {
+        return "mesero";
     }
-    
 }

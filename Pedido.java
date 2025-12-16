@@ -1,14 +1,13 @@
 public class Pedido {
-    
+    int id;
     int mesa;
     String mesero;
     String estado;
-    double total;
-    
-    public Pedido (int mesa, String estado, double total, String mesero){
+
+    public Pedido(int id, int mesa, String mesero) {
+        this.id = id;
         this.mesa = mesa;
-        this.estado = estado;
         this.mesero = mesero;
-        this.total = total;
+        this.estado = "pendiente";
     }
 }

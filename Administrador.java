@@ -1,8 +1,11 @@
-public class Administrador {
+public class Administrador extends Usuario {
 
-    Usuario dato;
-    
-    public Administrador (String nombre, String password){
-        dato = new Usuario(nombre, password);
+    public Administrador(String nombre, String usuario, String clave) {
+        super(nombre, usuario, clave);
+    }
+
+    @Override
+    public String getRol() {
+        return "admin";
     }
 }

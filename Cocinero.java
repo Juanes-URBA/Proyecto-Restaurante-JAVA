@@ -1,10 +1,11 @@
-public class Cocinero {
+public class Cocinero extends Usuario {
 
-    Usuario dato;
-    
-    public Cocinero(String nombre, String password ){
+    public Cocinero(String nombre, String usuario, String clave) {
+        super(nombre, usuario, clave);
+    }
 
-        dato = new Usuario(nombre, password);
-
+    @Override
+    public String getRol() {
+        return "cocinero";
     }
 }

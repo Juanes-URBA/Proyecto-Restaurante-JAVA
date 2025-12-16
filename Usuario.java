@@ -1,11 +1,19 @@
 public class Usuario {
 
-    String nombre;
-    String password;
+    // esta es la  clase padre adry
 
-    public Usuario (String nombre, String password){
+    String nombre;
+    String usuario;
+    String clave;
+
+    public Usuario(String nombre, String usuario, String clave) {
         this.nombre = nombre;
-        this.password = password; 
+        this.usuario = usuario;
+        this.clave = clave;
+    }
+
+    public String getRol() {
+        return "usuario";
     }
 }
 
