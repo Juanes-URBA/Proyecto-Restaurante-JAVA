@@ -1,35 +1,21 @@
-import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
 
         Restaurante r = new Restaurante();
         Mensajeria msg = new Mensajeria();
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Usuario: ");
-        String u = sc.nextLine();
-        System.out.print("Clave: ");
-        String c = sc.nextLine();
+        String u = msg.pedirTexto("Usuario: ");
+        String c = msg.pedirTexto("Contraseña: ");
 
-        Usuario log = r.login(u, c);
+        Usuario user = r.login(u, c);
 
-        if (log == null) {
+        if (user instanceof Mesero)
+            ((Mesero) user).menu(r, msg);
+        else if (user instanceof Cocinero)
+            ((Cocinero) user).menu(r, msg);
+        else if (user instanceof Administrador)
+            ((Administrador) user).menu(r, msg);
+        else
             System.out.println("Credenciales incorrectas");
-            return;
-        }
-
-        if (log instanceof Mesero) {
-            msg.opcionesMesero();
-        }
-
-        if (log instanceof Cocinero) {
-            msg.opcionesCocinero();
-        }
-
-        if (log instanceof Administrador) {
-            msg.opcionesAdmin();
-        }
     }
 }
