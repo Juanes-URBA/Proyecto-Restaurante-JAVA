@@ -16,6 +16,10 @@ public class Mensajeria {
         System.out.println("--------Cocinero---------");
         System.out.println("1. Ver pedidos pendientes");
         System.out.println("2. Cambiar estado de pedido");
+        System.out.println("3. Ver cantidad de pedidos por mesero");
+        System.out.println("4. Editar precio de producto");
+        System.out.println("5. Crear nuevo producto");
+        System.out.println("6. Cerrar jornada (ver total del día)");
         System.out.println("0. Cerrar sesión");
     }
 
