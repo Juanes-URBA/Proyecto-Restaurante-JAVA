@@ -102,4 +102,8 @@ public class Restaurante {
         System.out.println("Pedidos: " + pedidos.size());
         System.out.println("Total ingresos: $" + total);
     }
+    
+    public HashMap<Integer, Pedido> getPedidos() {
+    return pedidos;
+    }
 }
