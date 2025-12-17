@@ -3,7 +3,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 public class GemminiService {
-    private static final String API_KEY = "TU_API_KEY_GEMINI";
+    private static final String API_KEY = "AIzaSyC7bzV9wP7JpaguviW1nSgRxNaQT6tezjY";
 
     public String generarAnalisis(String reporte) {
         try {
@@ -19,7 +19,7 @@ public class GemminiService {
     
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(
-                        "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=" + API_KEY
+                    "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + API_KEY
                     ))
                     .header("Content-Type", "application/json")
                     .POST(HttpRequest.BodyPublishers.ofString(json))

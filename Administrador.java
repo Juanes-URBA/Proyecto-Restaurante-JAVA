@@ -40,6 +40,11 @@ public class Administrador extends Usuario {
                 case 6:
                     r.reporteFinal();
                     break;
+
+                case 7: 
+                    ReporteIAService ia = new ReporteIAService(r);
+                    System.out.println(ia.reporteMensualIA(9, 2025));
+                    break;
             }
 
         } while (op != 0);
